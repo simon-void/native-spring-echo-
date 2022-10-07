@@ -4,4 +4,4 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
-rootProject.name = "native-spring-echo"
+rootProject.name = "native-spring-echo-kotlin"
