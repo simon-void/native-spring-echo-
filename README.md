@@ -20,7 +20,7 @@ Compile to native by executing:
 
 You should now be able to execute the native binary:
 ```
-./build/native/nativeCompile/native-spring-echo-java
+./build/native/nativeCompile/native-spring-echo-kotlin
 ```
 
 ## Troubleshooting
