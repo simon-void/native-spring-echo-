@@ -1,10 +1,10 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    id("org.springframework.boot") version "3.0.0-M5"
-    id("io.spring.dependency-management") version "1.0.14.RELEASE"
-    id("org.graalvm.buildtools.native") version "0.9.14"
-    val kotlinVersion = "1.7.10"
+    id("org.springframework.boot") version "3.0.0"
+    id("io.spring.dependency-management") version "1.1.0"
+    id("org.graalvm.buildtools.native") version "0.9.18"
+    val kotlinVersion = "1.7.21"
     kotlin("jvm") version kotlinVersion
     kotlin("plugin.spring") version kotlinVersion
 }
@@ -15,7 +15,6 @@ java.sourceCompatibility = JavaVersion.VERSION_17
 
 repositories {
     mavenCentral()
-    maven { url = uri("https://repo.spring.io/milestone") }
 }
 
 dependencies {
