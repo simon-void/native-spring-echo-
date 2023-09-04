@@ -1,6 +1,6 @@
 # native-spring-echo-kotlin
 
-a minimal echo server
+a minimal echo server written in Kotlin & Spring Boot and compiled to native using GraalVM.
 
 Originally following this article https://spring.io/blog/2022/09/26/native-support-in-spring-boot-3-0-0-m5
 
@@ -23,6 +23,7 @@ You should now be able to execute the native binary:
 ./build/native/nativeCompile/native-spring-echo-kotlin
 ```
 
+### Run the native binary
 Now you can invoke the echo-server with a GET [http://localhost:8080/echo/any_msg](http://localhost:8080/echo/any_msg), e.g. with curl:
 ```
 curl http://localhost:8080/echo/any_msg
