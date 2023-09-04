@@ -1,14 +1,14 @@
 # native-spring-echo-kotlin
 
-a minimal echo server (invoke http://localhost:8080/echo/any_msg )
+a minimal echo server
 
-Following this article https://spring.io/blog/2022/09/26/native-support-in-spring-boot-3-0-0-m5
+Originally following this article https://spring.io/blog/2022/09/26/native-support-in-spring-boot-3-0-0-m5
 
 ## How to compile to native
 
 ### Preconditions
 
-- make sure GraalVm is installed (`sdk install java 23.r20-nik`) by checking that `native-image` is available as a command. (of course this assumes that [sdk is installed](https://sdkman.io/install))
+- make sure GraalVm is installed (`sdk install java 23.r20-nik`) and the default JDK by checking that `native-image` is available as a command. (of course this assumes that [sdk is installed](https://sdkman.io/install))
 - make sure gcc is installed (`sudo apt-get install gcc`)
 - on Ubuntu install libz-dev (`sudo apt-get install libz-dev`), if not on Ubuntu check the link in the troubleshooting section
 
@@ -21,6 +21,11 @@ Compile to native by executing:
 You should now be able to execute the native binary:
 ```
 ./build/native/nativeCompile/native-spring-echo-kotlin
+```
+
+Now you can invoke the echo-server with a GET [http://localhost:8080/echo/any_msg](http://localhost:8080/echo/any_msg), e.g. with curl:
+```
+curl http://localhost:8080/echo/any_msg
 ```
 
 ## Troubleshooting
