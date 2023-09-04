@@ -8,7 +8,7 @@ Following this article https://spring.io/blog/2022/09/26/native-support-in-sprin
 
 ### Preconditions
 
-- make sure GraalVm is installed (`sdk install java 22.2.r17-nik`) by checking that `native-image` is available as a command. (of course this assumes that [sdk is installed](https://sdkman.io/install))
+- make sure GraalVm is installed (`sdk install java 23.r20-nik`) by checking that `native-image` is available as a command. (of course this assumes that [sdk is installed](https://sdkman.io/install))
 - make sure gcc is installed (`sudo apt-get install gcc`)
 - on Ubuntu install libz-dev (`sudo apt-get install libz-dev`), if not on Ubuntu check the link in the troubleshooting section
 
